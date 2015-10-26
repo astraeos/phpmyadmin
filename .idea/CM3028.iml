@@ -2,10 +2,10 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/libraries/plugins/auth/recaptcha" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libraries/sql-parser/src" isTestSource="false" packagePrefix="SqlParser" />
-      <sourceFolder url="file://$MODULE_DIR$/libraries" isTestSource="false" packagePrefix="PMA" />
-      <sourceFolder url="file://$MODULE_DIR$/libraries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/phpmyadmin/libraries/plugins/auth/recaptcha" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/phpmyadmin/libraries/sql-parser/src" isTestSource="false" packagePrefix="SqlParser" />
+      <sourceFolder url="file://$MODULE_DIR$/phpmyadmin/libraries" isTestSource="false" packagePrefix="PMA" />
+      <sourceFolder url="file://$MODULE_DIR$/phpmyadmin/libraries" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
