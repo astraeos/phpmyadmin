@@ -14,7 +14,7 @@
         die('Connectfailed['.$db->connect_error.']');
     }
 
-    /*// create a SQL query as a string
+    // create a SQL query as a string
 
     $sql_query = "SELECT * FROM superheros  WHERE superpower LIKE '%laser%'";
 
@@ -32,5 +32,5 @@
 
     $result->close();
        // close connection to database
-       $db->close();*/
+       $db->close();
 ?>
