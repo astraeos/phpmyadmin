@@ -17,7 +17,7 @@
 
     // create a SQL query as a string
 
-    $sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%laser%'";
+    $sql_query = "SELECT * FROM superheros  WHERE superpower LIKE '%laser%'";
 
     // execute the SQL query
 
