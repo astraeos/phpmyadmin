@@ -1,5 +1,5 @@
 <?php
-    $db = new mysqli('eu-cdbr-azure-north-d.cloudapp.net', 'bab6477022e413', 'fc354109', 'eu-cdbr-azure-north-d.cloudapp.net');
+    $db = new mysqli('eu-cdbr-azure-north-d.cloudapp.net', 'bab6477022e413', 'fc354109', 'CM3028');
     if($db->connect_errno){
         die('Connectfailed['.$db->connect_error.']');
     }
