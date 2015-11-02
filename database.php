@@ -3,10 +3,9 @@
 // connect to your server and select database
 
     $db = new mysqli(
-    "eu-cdbr-azure-north-d.cloudapp.net",
-    "bab6477022e413",
-    "fc354109",
-    "CM3028"
+        "eu-cdbr-azure-north-d.cloudapp.net",
+        "bab6477022e413",
+        "fc354109"
     );
 
     // test if connection was established, and print any errors
