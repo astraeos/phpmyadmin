@@ -6,7 +6,7 @@
         "eu-cdbr-azure-north-d.cloudapp.net",
         "bab6477022e413",
         "fc354109",
-        "marvelmovies"
+        "CM3028"
     );
 
     // test if connection was established, and print any errors
