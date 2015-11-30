@@ -6,13 +6,13 @@
     <script>
         window.onload = function() {
             var xhttp = new XMLHttpRequest();
+            var url = require('url');
+            var queryData = url.parse(request.url, true).query;
+            var search = queryData.q;
             xhttp.onreadystatechange = function() {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
                     var tweets = JSON.parse(xhttp.responseText);
                     var tweetstring = "";
-                    var url = require('url');
-                    var queryData = url.parse(request.url, true).query;
-                    var search = queryData.q;
                     for (var i =0; i< tweets.length ; i++)
                     {
                         tweetstring += "<h3>" + tweets[i].name + "</h3> </br>";
@@ -21,7 +21,7 @@
                     document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://3028.azurewebsites.net/", true);
+            xhttp.open("GET", "http://3028.azurewebsites.net/?q="+search, true);
             xhttp.send();
         }
     </script>
