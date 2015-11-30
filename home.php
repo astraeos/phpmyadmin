@@ -8,6 +8,7 @@
             var xhttp = new XMLHttpRequest();
             var url = require('url');
             var queryData = url.parse(request.url, true).query;
+            var search = queryData.q;
             xhttp.onreadystatechange = function() {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
                     var tweets = JSON.parse(xhttp.responseText);
@@ -20,7 +21,8 @@
                     document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://3028.azurewebsites.net/?q="+queryData.q, true);
+            var urlString = "http://3028.azurewebsites.net/?q="+search;
+            xhttp.open("GET", urlString, true);
             xhttp.send();
         }
     </script>
