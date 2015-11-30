@@ -10,6 +10,9 @@
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
                     var tweets = JSON.parse(xhttp.responseText);
                     var tweetstring = "";
+                    var url = require('url');
+                    var queryData = url.parse(request.url, true).query;
+                    var search = queryData.q;
                     for (var i =0; i< tweets.length ; i++)
                     {
                         tweetstring += "<h3>" + tweets[i].name + "</h3> </br>";
