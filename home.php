@@ -22,6 +22,9 @@
                 }
             };
             var urlString = "http://3028.azurewebsites.net/?q="+search;
+            <?php
+                echo urlString;
+            ?>
             xhttp.open("GET", urlString, true);
             xhttp.send();
         }
